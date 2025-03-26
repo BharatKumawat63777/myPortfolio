@@ -24,8 +24,11 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
       to,
-      subject,
-      text,
+      subject:"Thank you",
+      html:`
+        <h3>Hello, Ms. ${to}</h3>
+        <p>I'll contect you within 24 hours.</p>
+      `
     });
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
