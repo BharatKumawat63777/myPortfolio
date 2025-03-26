@@ -4,7 +4,7 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
+import { Toaster, toast } from "react-hot-toast";
 const EmailSection = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -12,6 +12,7 @@ const EmailSection = () => {
 
   const handleSendMessage = async (event) => {
     event.preventDefault();
+    const toastId = toast.loading("Fetching data...");
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -19,20 +20,22 @@ const EmailSection = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          to: email,
+          sender: email,
           subject: subject,
           text: message,
         }),
       });
-      console.log("response: ", response);
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      console.log("Email sent successfully:");
+      toast.success("Thank you", { id: toastId });
+
       setEmail("");
       setMessage("");
       setSubject("");
     } catch (error) {
+      toast.error("Sorry", { id: toastId });
       console.error("Request failed:", error.message);
     }
   };

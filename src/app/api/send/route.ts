@@ -7,9 +7,9 @@ export async function GET(req) {
 
 export async function POST(req: NextRequest) {
   try {
-    const { to, subject, text } = await req.json();
+    const { sender, subject, text } = await req.json();
 
-    if (!to || !subject || !text) {
+    if (!sender || !subject || !text) {
       return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
     }
 
@@ -20,24 +20,24 @@ export async function POST(req: NextRequest) {
         pass: process.env.GMAIL_PASS,
       },
     });
-    const sendermail = to;
+    
     // send  a mail  sender to receiver
     await transporter.sendMail({
-      from: sendermail,
+      from: sender,
       to:process.env.GMAIL_USER,
-      subject,
-      text,
+      subject:"Throu Portfolio",
+      text:`senderId: ${sender}, Message: ${text}`,
     });
 
     // send a mail receiver to sender
 
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
-      to,
+      to:sender,
       subject:"Thank you",
       html:`
-        <h3>Hello, Ms. ${to}</h3>
-        <p>I'll contect you within 24 hours.</p>
+        <h3>Hello, Ms. ${sender}</h3>
+        <p>I'll contact you within 24 hours.</p>
       `
     });
 

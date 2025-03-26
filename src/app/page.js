@@ -23,7 +23,7 @@ export default function Home() {
         <ProjectsSection />        
         <AutoSlidingCarousel />
         <Skillsbar />
-        <Question />
+        {/* <Question /> */}
         <Whyus />
         <Topbutton />
         {/* <Pricing/> */}
