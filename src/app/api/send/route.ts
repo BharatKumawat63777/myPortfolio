@@ -20,13 +20,16 @@ export async function POST(req: NextRequest) {
         pass: process.env.GMAIL_PASS,
       },
     });
+    const sendermail = to;
     // send  a mail  sender to receiver
     await transporter.sendMail({
-      from: to,
+      from: sendermail,
       to:process.env.GMAIL_USER,
       subject,
       text,
     });
+
+    // send a mail receiver to sender
 
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
