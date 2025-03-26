@@ -58,7 +58,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I'm a specialist in full-stack web development using the MERN stack
+            I&apos;m a specialist in full-stack web development using the MERN stack
             (MongoDB, Express.js, React.js, Node.js), Next.js, and TypeScript.
             Over the years, I have delivered premium solutions that ensure
             exceptional user experiences and high performance across all

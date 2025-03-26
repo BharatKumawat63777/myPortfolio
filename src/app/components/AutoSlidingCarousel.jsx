@@ -81,7 +81,7 @@ const AutoSlidingCarousel = () => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   // Handle previous slide
   const prevSlide = () => {
