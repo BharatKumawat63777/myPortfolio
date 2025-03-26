@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function GET(req) {
-  return Response.json({ message: "Hello from API!" });
+  return NextResponse.json({ message: "Hello from API!" });
 }
 
 export async function POST(req: NextRequest) {
