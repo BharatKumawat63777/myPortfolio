@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const AutoSlidingCarousel = () => {
   const [index, setIndex] = useState(0);
@@ -115,9 +116,11 @@ const AutoSlidingCarousel = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src={slides[index].img}
                 alt={slides[index].title}
+                width={800} // Adjust the width based on your layout
+                height={320} // Adjust the height based on your layout
                 className="w-full h-80 object-cover rounded-md cursor-pointer"
               />
             </a>

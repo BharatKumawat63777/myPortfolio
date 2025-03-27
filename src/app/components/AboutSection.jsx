@@ -50,7 +50,7 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           className="rounded-3xl"
-          src="/images/about-image.png"
+          src="/images/IMG_0467.png"
           width={500}
           height={500}
           alt="data"
@@ -58,10 +58,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I&apos;m a specialist in full-stack web development using the MERN stack
-            (MongoDB, Express.js, React.js, Node.js), Next.js, and TypeScript.
-            Over the years, I have delivered premium solutions that ensure
-            exceptional user experiences and high performance across all
+            I&apos;m a specialist in full-stack web development using the MERN
+            stack (MongoDB, Express.js, React.js, Node.js), Next.js, and
+            TypeScript. Over the years, I have delivered premium solutions that
+            ensure exceptional user experiences and high performance across all
             devices. My expertise spans both front-end and back-end development,
             allowing me to build scalable and efficient web applications.
             Collaborating with cross-functional teams and leading projects has
