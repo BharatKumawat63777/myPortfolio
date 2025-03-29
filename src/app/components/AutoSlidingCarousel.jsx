@@ -7,72 +7,36 @@ const AutoSlidingCarousel = () => {
 
   const slides = [
     {
-      img: "/images/projects/1.jpg",
-      title: "Hair Majesty - Redefining Your Look with Elegance",
-      description: "Step into a world of flawless transformations...",
-      link: "https://nails-decoration.vercel.app/",
+      img: "/images/projects/frontend_kks.jpeg",
+      title: "E-commerce Website",
+      description: "You can purchase grocery item.It's fast delivery.",
+      link: "https://krishna-kirna-store-kks.onrender.com",
     },
     {
-      img: "/images/projects/2.jpg",
-      title: "Hinna Henna Creations - Art That Adorns Your Skin",
-      description: "Immerse yourself in the beauty of henna...",
-      link: "https://hinna-henna-main.vercel.app/",
-    },
-    {
-      img: "/images/projects/3.jpg",
-      title: "TeleCare Hair Studio - Where Family Haircare Meets Excellence",
-      description: "From kids to adults, enjoy personalized hair solutions...",
-      link: "https://salon-frontend-master.vercel.app/",
-    },
-    {
-      img: "/images/projects/4.jpg",
-      title: "Glow & Grace - Unleash Your Unique Beauty",
+      img: "/images/projects/News_api.jpeg",
+      title: "News-reading",
       description:
-        "Explore skincare secrets, makeup trends, and self-care rituals...",
-      link: "https://shofy-beauty-and-cosmetics-ecommerce-client-main.vercel.app/",
+        "We can use to update everytime.we should save tree in world through technology.",
+      link: "https://news-website-1-l8x5.onrender.com/",
     },
     {
-      img: "/images/projects/5.jpg",
-      title: "DreamHome Realty - Your Key to the Perfect Property",
-      description:
-        "Discover your dream home with a seamless property search, expert insights, and tailored real estate solutions.",
-      link: "https://real-estate-main-amber.vercel.app/",
-    },
-
-    {
-      img: "/images/projects/6.jpg",
-      title: "WanderScape - Your Gateway to Unforgettable Adventures",
-      description:
-        "Plan your perfect getaway with curated tours, themed travel experiences, and expert guides to explore the world your way.",
-      link: "https://travelwebsite-master.vercel.app/",
+      img: "/images/projects/admin_kks.jpeg",
+      title: "Admin Portal-Ecommerce",
+      description: "This is using to upload item,taking order etc...",
+      link: "https://github.com/BharatKumawat63777/E-commerce-Website/tree/main/admin",
     },
     {
-      img: "/images/projects/7.jpg",
-      title: "Discover Africa - The Heartbeat of Adventure",
-      description:
-        "Embark on an extraordinary journey through Africa's rich landscapes, wildlife, and cultural wonders.",
-      link: "https://travelling-to-africs.vercel.app/",
+      img: "/images/projects/Notebook.jpeg",
+      title: "Notebook-note",
+      description: "It's using Note your daily routine and complete it.",
+      link: "https://github.com/BharatKumawat63777/inotebook",
     },
     {
-      img: "/images/projects/8.jpg",
-      title: "Elite Interiors - Elevate Your Living Space",
+      img: "/images/projects/pug.jpeg",
+      title: "Dance Website - pug",
       description:
-        "Find stunning furniture designs, modern aesthetics, and décor inspirations to transform your home into a masterpiece.",
-      link: "https://furniture-two-rho.vercel.app/",
-    },
-    {
-      img: "/images/projects/9.jpg",
-      title: "Neelum Valley Escape - Where Nature Meets Serenity",
-      description:
-        "Experience the breathtaking beauty of Swat and Neelum Valley with ultimate camping experiences and nature-inspired adventures.",
-      link: "https://travel-navy-sigma.vercel.app/",
-    },
-    {
-      img: "/images/projects/10.jpg",
-      title: "Pizza Bliss - Crafted for True Pizza Lovers",
-      description:
-        "From classic flavors to bold new creations, explore mouthwatering pizza recipes and pro tips for the perfect homemade slice.",
-      link: "https://food-theta-seven.vercel.app/",
+        "A dance website showcases various dance styles, tutorials, events, and performances. It connects dancers, instructors, and enthusiasts through online classes, workshops, and community engagement.",
+      link: "https://github.com/BharatKumawat63777/Dance-Website",
     },
   ];
 
